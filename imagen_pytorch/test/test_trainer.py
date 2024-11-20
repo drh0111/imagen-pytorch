@@ -1,8 +1,10 @@
 from imagen_pytorch.trainer import ImagenTrainer
 from imagen_pytorch.configs import ImagenConfig
 from imagen_pytorch.t5 import t5_encode_text
+from imagen_pytorch import Unet, Imagen
 from torch.utils.data import Dataset
 import torch
+
 
 def test_trainer_instantiation():
     unet1 = dict(
